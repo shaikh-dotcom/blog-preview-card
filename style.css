@@ -2,7 +2,7 @@
   box-sizing: border-box; 
 }
 body{
-   height: 100vh;
+   min-height: 100vh;
   padding: 0;
   margin: 0;
 font-family: 'Figtree', sans-serif;
@@ -32,6 +32,7 @@ line-height: 150%;
   box-shadow: 8px 8px 0px 0px #000000;
   border: 2px solid #000000;
   border-radius:20px;
+  justify-self: center;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -70,12 +71,6 @@ line-height: 150%;
   font-weight:800;
   width: fit-content;
   gap:12px ;
-}
-.main-card:hover {
-box-shadow: 16px 16px 0px 0px #000000;
-}
-.main-card:hover .heading{
-  color:#F4D04E;
 }
 @media (hover: hover) {
   .main-card:hover {
