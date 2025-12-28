@@ -14,7 +14,7 @@ line-height: 150%;
     display:grid;
   align-items:center;
   justify-content:center;
-  padding: 20px;
+  padding: 25px;
 }
 .image{
   border-radius:12px; 
@@ -24,7 +24,7 @@ line-height: 150%;
 .main-card{
   display:grid;
   height:auto;
-  width:90%;
+  width:100%;
   max-width:24rem;
   background-color:#FFFFFF;
   gap:12px;
@@ -34,7 +34,6 @@ line-height: 150%;
   border-radius:20px;
   justify-self: center;
   transition: box-shadow 0.3s ease;
-  cursor: pointer;
 }
 .pseudo-button{
  background-color:#F4D04E;
@@ -72,11 +71,28 @@ line-height: 150%;
   width: fit-content;
   gap:12px ;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
+  .main-card {
+    cursor: pointer;
+  }
   .main-card:hover {
     box-shadow: 16px 16px 0px 0px #000000;
   }
   .main-card:hover .heading {
     color: #F4D04E;
   }
+}
+@media(max-width: 480px){
+  .explanation-para{
+    font-size: 13px;
+  }
+  .heading{
+    font-size: 19px;
+  }
+  .date{
+    font-size: 12px;
+  }
+.pseudo-button{
+  font-size: 12px;
+}
 }
