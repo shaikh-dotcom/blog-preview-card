@@ -24,7 +24,7 @@ line-height: 150%;
 .main-card{
   display:grid;
   height:auto;
-  width:100%;
+  width:90%;
   max-width:24rem;
   background-color:#FFFFFF;
   gap:12px;
@@ -76,4 +76,13 @@ box-shadow: 16px 16px 0px 0px #000000;
 }
 .main-card:hover .heading{
   color:#F4D04E;
+}
+@media (hover: hover) {
+  .main-card:hover {
+    box-shadow: 16px 16px 0px 0px #000000;
+  }
+
+  .main-card:hover .heading {
+    color: #F4D04E;
+  }
 }
